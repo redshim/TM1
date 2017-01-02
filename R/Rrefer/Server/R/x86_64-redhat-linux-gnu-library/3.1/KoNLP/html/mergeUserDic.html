@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: appending or replacing with new data.frame</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for mergeUserDic {KoNLP}"><tr><td>mergeUserDic {KoNLP}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>appending or replacing with new data.frame</h2>
+
+<h3>Description</h3>
+
+<p>appending new dictionary to current dictionary.
+replaceing current dictionary with new dictionary.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+  mergeUserDic(newUserDic, append = TRUE, verbose = FALSE,
+    ask = FALSE)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>newUserDic</code></td>
+<td>
+<p>new user dictionary as data.frame</p>
+</td></tr>
+<tr valign="top"><td><code>append</code></td>
+<td>
+<p>append or replacing</p>
+</td></tr>
+<tr valign="top"><td><code>verbose</code></td>
+<td>
+<p>see detail error logs</p>
+</td></tr>
+<tr valign="top"><td><code>ask</code></td>
+<td>
+<p>ask to backup</p>
+</td></tr>
+</table>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Not run: 
+## This codes can not be run
+##  if you don't have encoding system which can en/decode
+##  Hangul(ex) CP949, EUC-KR, UTF-8).
+dicpath &lt;- file.path(system.file(package="Sejong"), "dics", "handic.zip")
+conn &lt;- unz(dicpath, file.path("data","kE","dic_user2.txt"))
+newdic &lt;- read.table(conn, sep="\t", header=FALSE, fileEncoding="UTF-8", stringsAsFactors=FALSE)
+mergeUserDic(newdic)
+## backup merged new dictionary
+backupUsrDic(ask=FALSE)
+## restore from backup directory
+restoreUsrDic(ask=FALSE)
+## reloading new dictionary
+reloadAllDic()
+## End(Not run)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>KoNLP</em> version 0.76.9 <a href="00Index.html">Index</a>]</div>
+</body></html>

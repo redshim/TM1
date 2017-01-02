@@ -1,0 +1,24 @@
+Hannanum,Kkma,Komoran,Mecab,Twitter
+아이폰 / N,아이 / NNG,,,아이폰 / Noun
+기다리 / P,폰 / NNG,,,기다리 / Verb
+다 / E,기다리 / VV,,,다 / Eomi
+지치 / P,다 / ECS,,,지쳐 / Verb
+어 / E,지치 / VV,,,애플 / Noun
+애플공홈 / N,어 / ECS,,,공홈 / Noun
+에서 / J,애플 / NNP,,,에서 / Josa
+언락폰질러버렸다 / N,공 / NNG,,,언락폰 / Noun
+6+ / N,홈 / NNG,,,질 / Verb
+128기가실벜 / N,에서 / JKM,,,러 / Eomi
+,언락 / NNG,,,버렸 / Verb
+,폰 / NNG,,,다 / Eomi
+,질르 / VV,,,6 / Number
+,어 / ECS,,,+ / Punctuation
+,버리 / VXV,,,128 / Number
+,었 / EPT,,,기 / Noun
+,다 / ECS,,,가 / Josa
+,6 / NR,,,실버 / Noun
+,+ / SW,,,ㅋ / KoreanParticle
+,128 / NR,,,
+,기가 / NNG,,,
+,실버 / NNG,,,
+,ㅋ / UN,,,
